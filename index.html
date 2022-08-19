@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> -->
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="pizza pizza-buy" id="pizza">
+        <img src="images/pizza-1.png" alt="" width="300px" />
+
+
+        <!-- <div class="ingredients"></div> -->
+        <!-- <img
+          src="images/o"
+          width="40px"
+          class="ingredient animate__animated animate__backInUp"
+          style="top: 30%; left: 70%"
+        />
+        /> -->
+      </div>
+      <!-- <img
+        src="images/box_front.png"
+        alt=""
+        class="box-front"
+      /> -->
+      <img src="images/box_inside.png" alt="" class="box-back-top" />
+      <img src="images/box_inside.png" alt="" class="box-back" />
+    </div>
+    <button onclick="setIngredient(0)">Mashroom</button>
+    <button onclick="setIngredient(1)">Onions</button>
+    <button onclick="setIngredient(2)">Olive</button>
+
+    <button onclick="pay()">Pagar</button>
+  </body>
+</html>
