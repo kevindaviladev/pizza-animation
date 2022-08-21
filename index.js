@@ -189,4 +189,18 @@ function pay3() {
     scale: "0.5",
     y: 60,
   })
+
+  const pizzaBox = document.getElementById("pizza-box")
+  // pizzaBox.style.display = "block"
+
+  tl.to(".box", {
+    autoAlpha: 1,
+  })
+
+  tl.to(".tapa", {
+    rotateX: 0,
+    autoAlpha: 1,
+  })
+
+  // pizzaBox.classList.add('box-to-close');
 }
