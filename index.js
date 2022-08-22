@@ -190,6 +190,8 @@ function pay3() {
     y: 60,
   })
 
+  const pizza = document.getElementById("pizza")
+  // pizza.style.opacity = 0
   const pizzaBox = document.getElementById("pizza-box")
   // pizzaBox.style.display = "block"
 
@@ -202,5 +204,11 @@ function pay3() {
     autoAlpha: 1,
   })
 
-  // pizzaBox.classList.add('box-to-close');
+  setTimeout(() => {
+    pizza.style.opacity = 0;
+    pizzaBox.classList.add("outRight")
+    tl.to(".box", {
+      autoAlpha: 0,
+    })
+  }, 3000)
 }

@@ -27,6 +27,28 @@
     animation: backInUpAnimation 1s 1;
 }
 
+.btn-ingredients {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ingredient {
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.btn-ingredient img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 @keyframes mymove {
     from {
         transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(-276deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
@@ -127,7 +149,8 @@
 
 }
 
-.tapa:hover, .box-to-close .tapa {
+.tapa:hover,
+.box-to-close .tapa {
     transform: rotateX(0deg);
     transition: 0.7s ease;
     /* transition: 0.1s; */
@@ -148,4 +171,26 @@
     max-width: 100%;
     width: 100%;
     transform: translateY(-37px) perspective(500px) rotateX(45deg);
+}
+
+.outRight {
+    animation: outRight 1s 1;
+}
+
+/* .box:hover {
+    animation: outRight 1s 1;
+} */
+
+@keyframes outRight {
+    from {
+        opacity: 1;
+        -webkit-transform: translate3d(-20px, 0, 0) scaleX(.9);
+        transform: translate3d(-20px, 0, 0) scaleX(.9);
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(2000px, 0, 0) scaleX(2);
+        transform: translate3d(2000px, 0, 0) scaleX(2);
+    }
 }
