@@ -1,36 +1,59 @@
-<!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0">
     <title>Animaciones</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   </head>
   <body>
-    <div class="container" id="container">
-      <div class="pizza" id="pizza">
-        <img src="images/pizza-1.png" alt="" width="200px" />
+    <div class="header">
+      <h1>New Orleans Pizza</h1>
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+        alt="Shop car"
+        width="30px"
+        height="30px">
+    </div>
+    <div
+      class="container"
+      id="container">
+      <div
+        class="pizza"
+        id="pizza">
+        <img
+          src="images/pizza-1.png"
+          alt
+          width="200px">
       </div>
 
       <!-- Pizza box -->
-      <div class="box" id="pizza-box">
+      <div
+        class="box"
+        id="pizza-box">
         <div class="tapa">
           <div class="tapa-frente">
-            <img src="images/box_inside.png" alt />
+            <img
+              src="images/box_inside.png"
+              alt>
           </div>
           <div class="tapa-atras">
-            <img src="images/box_front.png" alt />
+            <img
+              src="images/box_front.png"
+              alt>
           </div>
         </div>
         <div class="fondo">
-          <img src="images/box_inside.png" class="fondo-img" alt />
+          <img
+            src="images/box_inside.png"
+            class="fondo-img"
+            alt>
         </div>
       </div>
 
@@ -38,14 +61,42 @@
 
     <!-- <p class="animate__animated animate__bounceOutRight">C va</p> -->
     <div class="btn-ingredients">
-      <button class="btn-ingredient" onclick="setIngredient(0)">
-      <img src="images/mushroom.png" alt=""></button>
-      <button class="btn-ingredient" onclick="setIngredient(1)">
-      <img src="images/onion.png" alt=""></button>
-      <button class="btn-ingredient" onclick="setIngredient(2)"><img src="images/olive_unit.png" alt=""></button>
+      <button
+        class="btn-ingredient"
+        onclick="setIngredient(0)">
+        <img
+          src="images/mushroom.png"
+          alt>
+      </button>
+      <button
+        class="btn-ingredient"
+        onclick="setIngredient(1)">
+        <img
+          src="images/onion.png"
+          alt>
+      </button>
+      <button
+        class="btn-ingredient"
+        onclick="setIngredient(2)">
+        <img
+          src="images/olive_unit.png"
+          alt>
+      </button>
     </div>
 
-    <button onclick="pay3()">Pagar</button>
-  </div>
+    <button
+      class="btn-pay"
+      onclick="pay()">
+      PAGAR
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/1086/1086741.png"
+        alt="Button pay"
+        width="40px"
+        height="40px">
+    </button>
+    <footer>
+      Developed by
+      <a href="https://www.youtube.com/kevindaviladev" target="_blank">Kevin Davila</a>
+    </footer>
   </body>
 </html>
