@@ -134,7 +134,7 @@ margin-top: 1.5em;
   position: relative;
   transform-style: preserve-3d;
   transition: 0.7s ease;
-  transform-origin: 100% 2%;
+  transform-origin: 100% 3%;
   transform: rotateX(180deg);
   z-index: 10;
 }
