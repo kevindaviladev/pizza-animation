@@ -98,7 +98,7 @@ function pay() {
   tl.to(".pizza", {
     duration: 1,
     scale: "0.5",
-    y: 60,
+    y: 66,
   })
 
   const pizza = document.getElementById("pizza")
